@@ -1,5 +1,5 @@
 <?php
-include 'menu.php';
+include '../menu.php';
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ include 'menu.php';
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Formulario de Altas</title>
-	<link rel="stylesheet" href="css/formAltas.css">
+	<link rel="stylesheet" href="../css/formAltas.css">
 </head>
 <body>
 
@@ -31,8 +31,13 @@ include 'menu.php';
 	    </div>
 
 		<div class="grupoInputs">
-		<label for="clave">Clave:</label>
+		<label for="clave">Clave</label>
 		<input type="password" name="clave"><br>
+	    </div>
+
+		<div class="grupoInputs">
+		<label for="pin">Pin</label>
+		<input type="number" name="pin"><br>
 	    </div>
 
 		<div class="grupoInputs">

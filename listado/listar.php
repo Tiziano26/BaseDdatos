@@ -1,12 +1,12 @@
 <?php
-include 'menu.php';
+include '../menu.php';
 ?>
 <html lang="es">
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Formulario de Altas</title>
-	<link rel="stylesheet" href="css/respuestas.css">
+	<link rel="stylesheet" href="../css/respuestas.css">
 	</head>
 	<body>
 	<h3 class="tablatitulo">LISTADO DE LOS REGISTRO DE LA TABLA</h3>
@@ -21,6 +21,7 @@ include 'menu.php';
 			<th>Edad</th>
 			<th>Foto</th>
 			<th>Clave</th>
+			<th>Pin</th>
 			</tr>
 		</thead>
 	<?php 
@@ -34,7 +35,7 @@ $consulta = mysqli_query($Conexion,$cadena);
 
 while(  $registro = mysqli_fetch_row($consulta)   ){
 	echo "<tr class='trmain'>";
-	echo "<th>".$registro[0]."</th><th>".$registro[1]."</th><th>".$registro[2]."</th><th>".$registro[3]."</th><th><img src='data:image/jpeg;base64,".base64_encode($registro[4])."' width='200px'/></th>";
+	echo "<th>".$registro[0]."</th><th>".$registro[1]."</th><th>".$registro[2]."</th><th>".$registro[3]."</th><th><img src='data:image/jpeg;base64,".base64_encode($registro[4])."' width='200px'/></th><th>".$registro[5]."</th><th>".$registro[6]."</th>";
 	echo "</tr>";
 }
  ?>

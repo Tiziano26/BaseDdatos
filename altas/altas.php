@@ -1,25 +1,26 @@
 
 <html lang="es">
 	<head>
-	<link rel="stylesheet" href="css/altaBajaModificacion.css">
+	<link rel="stylesheet" href="../css/altaBajaModificacion.css">
 	</head>
 </html>
 
 
 <?php 
 
-include 'menu.php';
+include '../menu.php';
 
 $ape = $_POST['apellido'];
 $nom = $_POST['nombre'];
 $ed = $_POST['edad'];
 $cl = $_POST['clave'];
+$pin = $_POST['pin'];
 $foto = $_FILES["foto"]["tmp_name"];
 $fotoTamanio = $_FILES["foto"]["size"];
 
 // salida de informacion
 
-echo "<h3>".$ape."</h3>". "<h3>".$nom."</h3>". "<h3>".$ed."</h3>". "<h3>".$cl."</h3>";
+echo "<h3>".$ape."</h3>". "<h3>".$nom."</h3>". "<h3>".$ed."</h3>". "<h3>".$cl."</h3>". "<h3>".$pin."</h3>";
 
 if($foto != "none")
 {
@@ -31,7 +32,7 @@ if($foto != "none")
 	$base = "gestionsubir";
 $Conexion =  mysqli_connect("localhost","root","",$base);
 
-$cadena= "INSERT INTO persona(apellido, nombre, edad,foto) VALUES ('$ape','$nom','$ed','$contenido')";
+$cadena= "INSERT INTO persona(apellido, nombre, edad,foto,clave, pin) VALUES ('$ape','$nom','$ed','$contenido','$cl','$pin')";
 
 $resultado = mysqli_query($Conexion,$cadena);
 
@@ -46,4 +47,4 @@ if($resultado){
 else
 print "No se puede subir el archivo";
 
- ?>wgsdfg
+ ?>
