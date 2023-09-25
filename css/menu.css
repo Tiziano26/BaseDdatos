@@ -1,19 +1,20 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
+    background-color:rgb(187, 79, 187);
 }
 
 .header{
     display: flex;
     flex-direction: column;
-    background-color: gainsboro;
+    background-color:rgb(134, 50, 134);
     height: 120px;
+    
 }
 
 .titulo{
     text-align: center;
-    color: rgb(68, 66, 66);
+    color:rgb(189, 108, 189);
 }
 
 .menu{
@@ -24,14 +25,15 @@ body{
 .menu a{
     text-decoration: none;
     padding: 10px;
-    color: rgb(71, 69, 69);
-    background-color: gainsboro;
+    color: rgb(214, 135, 214);
+    background-color: rgb(187, 79, 187);
     margin: 10px;
+    border-radius: 10px;
 }
 
 .menu a:hover{
-    border: 1px solid rgb(56, 55, 55);
-    background-color: rgb(75, 90, 85);
-    color: white;
+    border: 1px solid;
+    background-color: rgb(214, 135, 214);
+    color:  rgb(187, 79, 187);
     border-radius: 10px;
 }

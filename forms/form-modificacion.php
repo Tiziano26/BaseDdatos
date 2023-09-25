@@ -1,5 +1,5 @@
 <?php
-include '../menu.php';
+include 'menu.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -13,7 +13,7 @@ include '../menu.php';
 
 <div class="container">
 	<h3 class="altaTitulo">FORMULARIO DE MODIFICACION</h3>
-	<form class="altaInput" action="modificacion.php" method="POST" >
+	<form class="altaInput" action="../funcionalidad/modificacion.php" method="POST" >
 	<div class="grupoInputs">
 		<label for="apellido">Campo Clave Apellido:</label>
 		<input type="text" name="apellido"><br>	
@@ -30,6 +30,11 @@ include '../menu.php';
 		<div class="grupoInputs">
 		<label for="edad">Edad:</label>
 		<input type="text" name="edad"><br>
+	    </div>
+
+		<div class="grupoInputs">
+		<label for="edad">Clave:</label>
+		<input type="password" name="clave"><br>
 	    </div>
 
 		<div class="btn-submit">

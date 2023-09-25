@@ -1,5 +1,5 @@
 <?php
-include '../menu.php';
+include 'menu.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -13,7 +13,7 @@ include '../menu.php';
 
 <div class="container">
 	<h3 class="altaTitulo" style="text-align: center;">FORMULARIO DE BAJA</h3>
-	<form class="altaInput" action="bajas.php" method="POST" >
+	<form class="altaInput" action="../funcionalidad/bajas.php" method="POST" >
 	    <div class="grupoInputs">
 		<label for="pin">Pin:</label>
         <input type="number" name="pin"><br>	

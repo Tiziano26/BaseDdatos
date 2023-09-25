@@ -8,7 +8,7 @@
 
 <?php 
 
-include '../menu.php';
+
 
 $ape = $_POST['apellido'];
 $nom = $_POST['nombre'];
@@ -20,7 +20,7 @@ $fotoTamanio = $_FILES["foto"]["size"];
 
 // salida de informacion
 
-echo "<h3>".$ape."</h3>". "<h3>".$nom."</h3>". "<h3>".$ed."</h3>". "<h3>".$cl."</h3>". "<h3>".$pin."</h3>";
+
 
 if($foto != "none")
 {
@@ -38,9 +38,43 @@ $resultado = mysqli_query($Conexion,$cadena);
 
 if($resultado){
 	print "se ha insertado un registro"."<br>";
+	print "<a class='btn' href='../forms/form-altas.php'>Volver</a>
+	<style>
+		body{
+			display: flex;
+			justify-content: center;
+			margin: 0;
+    		padding: 0;
+    		background-color:rgb(187, 79, 187);
+			margin: 220px;
+			font-size: 30px;
+		}
+		.btn{
+			color: rgb(214, 135, 214);
+    		background-color: black;
+			height: 30px;
+		}
+	</style>";
 
 }else{
 	print "NO se ha generado un registro"."<br>";
+	print "<a class='btn' href='../forms/form-altas.php'>Volver</a>
+	<style>
+		body{
+			display: flex;
+			justify-content: center;
+			margin: 0;
+    		padding: 0;
+    		background-color:rgb(187, 79, 187);
+			margin: 220px;
+			font-size: 30px;
+		}
+		.btn{
+			color: rgb(214, 135, 214);
+    		background-color: black;
+			height: 30px;
+		}
+	</style>";
 }
 
 }

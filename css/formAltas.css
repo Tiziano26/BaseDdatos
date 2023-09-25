@@ -2,11 +2,15 @@
     margin: 50px;
     display: flex;
     flex-direction: column;
+    border-radius: 70px;
+    border: 30px;
 }
 
 .altaTitulo{
     text-align: center;
     margin-bottom: 40px;
+    color:rgb(134, 50, 134);
+    font-size: 35px;
 }
 
 .altaInput{
@@ -18,14 +22,17 @@
 .grupoInputs{
     width: 50%;
     margin: 10px;
+    font-size: 20px;
 }
 
 .grupoInputs input{
     width: 70%;
+    border-radius: 10px;
 }
 
 .grupoInputs label{
     padding: 10px;
+    border-radius: 10px;
 }
 
 .btn-submit{
