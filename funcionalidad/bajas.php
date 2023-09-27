@@ -18,7 +18,7 @@ if($Conexion){
 	echo "la conexion ha fallado "."<br>";
 }
 
-$cadena= "DELETE FROM persona  WHERE pin = '$pin'";  
+$cadena= "DELETE FROM personas  WHERE pin = '$pin'";  
 
 $resultado = mysqli_query($Conexion,$cadena);
 
@@ -39,6 +39,7 @@ if($resultado){
 			color: rgb(214, 135, 214);
     		background-color: black;
 			height: 30px;
+			text-decoration:none;
 		}
 	</style>";
 

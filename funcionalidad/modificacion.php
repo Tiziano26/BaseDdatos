@@ -22,7 +22,7 @@ if($Conexion){
 	echo "la conexion ha fallado "."<br>";
 }
 
-$cadena = "UPDATE  persona SET nombre = '$nom', edad = '$ed', clave = '$cl' WHERE apellido = '$ape'";
+$cadena = "UPDATE  personas SET nombre = '$nom', edad = '$ed', clave = '$cl' WHERE apellido = '$ape'";
 
 $resultado = mysqli_query($Conexion,$cadena);
 
